@@ -18,13 +18,18 @@ class Palindrom:
         return word == reverse
 
 
-if __name__ == '__main__':
+def main():
     user_input = input('Give your word:')
     print(user_input)
     word = Palindrom(user_input)
-    reversed= word.reverse_word()
+    reversed = word.reverse_word()
     print(reversed)
-    print(word.is_palindromn())
+    print(word.is_palindrom())
     url = f'https://poocoo.pl/scrabble-slowa-z-liter/{user_input}'
     webbrowser.open(url)
+
+
+if __name__ == '__main__':
+    main()
+
 

@@ -1,0 +1,11 @@
+#KARTKA #Z #KALENDARZA
+Napisz program, który po uruchomieniu wyświetla w czytelnej formie aktualną datę, godzinę,
+dzień tygodnia i pogodę/temperaturę/ciśnienie w zadanym mieście
+(wykorzystaj np. https://rapidapi.com/commu.../api/open-weather-map/endpoints - pamiętaj o poprawnym przeliczeniu jednostek np. temperatura z kelwinów na stopnie) oraz losowy cytat (np. https://type.fit/api/quotes ).
+Wykorzystaj requests i datetime.
+Propozycja rozszerzenia:
+Wyświetl również bieżący czas dla miast w różnych strefach czasowych (np. Pekin, Sydney, Waszyngton, Londyn)
+ - wykorzystaj np. pytz: https://pypi.org/project/pytz/ oraz wyświetl listę osób obchodzących imieniny
+ (poszukaj otwartej bazy danych lub wykorzystaj prosty web scrapping
+ np. z wykorzystaniem: https://imienniczek.pl/widget/js ).
+
