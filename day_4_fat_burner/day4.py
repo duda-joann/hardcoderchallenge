@@ -1,9 +1,16 @@
 import os
+from typing import Dict
 
 
 class BmiCategories:
     """ class for available bmi categories"""
-    def get_bmi_categories(self):
+
+    @staticmethod
+    def get_bmi_categories() -> Dict:
+        """
+        function for create bmi summary
+        :return: dictionary with bmi parameters
+        """
         return {
                 'Underweight': {
                     'min': 0.0,
@@ -40,7 +47,11 @@ class PhysicalActivities:
     """ class with available Physical activities"""
 
     @staticmethod
-    def get_activities():
+    def get_activities() -> list:
+        """
+        List of activities
+        :return:
+        """
         return ['Walking',
                 'Dancing',
                 'Swimming',
@@ -56,49 +67,75 @@ class PhysicalActivities:
 
 class FatBurnerProgram:
     """ class for futburner dedicated """
-    def __init__(self, height, weight, time):
+    def __init__(self, height: float, weight: float, time: float, activities: list, bmi: Dict) -> None:
+        """
+        :param height: user's height in metres
+        :param weight: user's weight in kilogrames
+        :param time:  time in minutes
+        :param activities: list of available activities
+        :param bmi: dictionary with bmi parameters
+        """
         self.height = height
         self.weight = weight
         self.time = time
+        self.activities = activities
+        self.bmi = bmi
 
-    def count_bmi(self):
+    def count_bmi(self) -> float:
+        """
+        return BMI value
+        :return:
+        """
         return round(self.weight/(self.height**2), 2)
 
-    def get_bmi_categories(self):
+    def get_bmi_categories(self) -> tuple:
+        """ get bmi category"""
         bmi = self.count_bmi()
         categories = BmiCategories().get_bmi_categories()
         for key, value in categories.items():
             if value['min'] <= bmi < value['max']:
                 return bmi, key, value['multiplier']
 
-    def create_plan(self):
-        trainings ={}
+    def create_plan(self) -> Dict:
+        """
+        creates user's training plan
+        :return:
+        """
+        trainings = {}
         avg_train_time = PhysicalActivities().avg_training_time()
         weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-        activities = PhysicalActivities.get_activities()
-        result = self.get_bmi_categories()
-        bmi, key, multiplier = result
+        bmi, key, multiplier = self.get_bmi_categories()
         for day in weekdays:
             if avg_train_time * multiplier < self.time:
-                trainings[day] = {key: avg_train_time * multiplier for key in activities}
+                trainings[day] = {key: avg_train_time * multiplier for key in self.activities}
                 return trainings
             else:
-                trainings[day] = {key: self.time for key in activities}
+                trainings[day] = {key: self.time for key in self.activities}
                 return trainings
 
-    def save_plan(self):
+    def save_plan_to_txt(self) -> None:
+        """
+        save training plan  to *.txt
+        :return:
+        """
         plan = self.create_plan()
         path = os.getcwd()
         with open(os.path.join(path, 'daily.txt'), 'w') as temp_file:
-                temp_file.write(str(plan))
+            temp_file.write(str(plan))
 
 
-def main():
+def main() -> None:
+    """
+    runs script
+    :return:
+    """
     try:
         weight = float(input("Put your weight:"))
         height = float(input("Put your height in metres [m]:"))
         time = float(input("Please provide your time per day for activity:"))
-        FatBurnerProgram(weight, height, time).save_plan()
+        activities = PhysicalActivities().get_activities()
+        bmi = BmiCategories().get_bmi_categories()
+        FatBurnerProgram(weight, height, time, activities, bmi).save_plan_to_txt()
     except ValueError:
         print("Your input is incorrect")
 

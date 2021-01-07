@@ -1,1 +1,1 @@
-{'Monday': {'Walking': 56.0, 'Dancing': 56.0, 'Swimming': 56.0, 'Water aerobics': 56.0, 'Jogging and running': 56.0, 'Aerobic exercise classes': 56.0, 'Bicycle riding(stationary or on a path)': 56.0}}
+{'Monday': {'Walking': 24.0, 'Dancing': 24.0, 'Swimming': 24.0, 'Water aerobics': 24.0, 'Jogging and running': 24.0, 'Aerobic exercise classes': 24.0, 'Bicycle riding(stationary or on a path)': 24.0}}
