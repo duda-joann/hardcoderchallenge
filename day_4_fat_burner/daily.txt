@@ -1,0 +1,1 @@
+{'Monday': {'Walking': 56.0, 'Dancing': 56.0, 'Swimming': 56.0, 'Water aerobics': 56.0, 'Jogging and running': 56.0, 'Aerobic exercise classes': 56.0, 'Bicycle riding(stationary or on a path)': 56.0}}
