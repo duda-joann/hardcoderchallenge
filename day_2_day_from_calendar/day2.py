@@ -65,7 +65,7 @@ def main() -> None:
     city = input('Please provide your city: ')
     params = {"q": "London", "lang": "eng", "units": "metric"}
     headers = {
-        'x-rapidapi-key': "0f062f447cmsha3201cd01ee5606p1bb261jsn1f348c5fe246",
+        'x-rapidapi-key': "secret_key",
         'x-rapidapi-host': "community-open-weather-map.p.rapidapi.com"
                }
 

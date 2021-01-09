@@ -19,14 +19,18 @@ class Palindrom:
 
 
 def main():
-    user_input = input('Give your word:')
-    print(user_input)
-    word = Palindrom(user_input)
-    reversed = word.reverse_word()
-    print(reversed)
-    print(word.is_palindrom())
-    url = f'https://poocoo.pl/scrabble-slowa-z-liter/{user_input}'
-    webbrowser.open(url)
+    while True:
+        user_input = input('Give your word:')
+        print(user_input)
+        word = Palindrom(user_input)
+        reversed = word.reverse_word()
+        print(reversed)
+        print(word.is_palindrom())
+        url = f'https://poocoo.pl/scrabble-slowa-z-liter/{user_input}'
+        webbrowser.open(url)
+        action = input("do you want continue: [y/n]: ")
+        if action == 'n':
+            break
 
 
 if __name__ == '__main__':

@@ -129,15 +129,20 @@ def main() -> None:
     runs script
     :return:
     """
-    try:
-        weight = float(input("Put your weight:"))
-        height = float(input("Put your height in metres [m]:"))
-        time = float(input("Please provide your time per day for activity:"))
-        activities = PhysicalActivities().get_activities()
-        bmi = BmiCategories().get_bmi_categories()
-        FatBurnerProgram(weight, height, time, activities, bmi).save_plan_to_txt()
-    except ValueError:
-        print("Your input is incorrect")
+    while True:
+        try:
+            weight = float(input("Put your weight:"))
+            height = float(input("Put your height in metres [m]:"))
+            time = float(input("Please provide your time per day for activity:"))
+            activities = PhysicalActivities().get_activities()
+            bmi = BmiCategories().get_bmi_categories()
+            FatBurnerProgram(weight, height, time, activities, bmi).save_plan_to_txt()
+        except ValueError:
+            print("Your input is incorrect")
+
+        action = input('Do you want continue [y/n]: ')
+        if action == 'n':
+            break
 
 
 if __name__ == '__main__':
