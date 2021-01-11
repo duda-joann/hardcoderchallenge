@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29ea546c-f360-4d12-bdb4-d6f93f108988" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day_2_day_from_calendar/test_day2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day_3_sending_mails/test_day3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day_3_sending_mails/test_main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day_4_fat_burner/test_day4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_6_image_resizer/day6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_6_image_resizer/test_day6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day_1_palindroms&amp;anagrams/day1.py" beforeDir="false" afterPath="$PROJECT_DIR$/day_1_palindroms&amp;anagrams/day1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day_1_palindroms&amp;anagrams/test_day1.py" beforeDir="false" afterPath="$PROJECT_DIR$/day_1_palindroms&amp;anagrams/test_day1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day_2_day_from_calendar/day2.py" beforeDir="false" afterPath="$PROJECT_DIR$/day_2_day_from_calendar/day2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day_4_fat_burner/day4.py" beforeDir="false" afterPath="$PROJECT_DIR$/day_4_fat_burner/day4.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/day_6_image_resizer" />
   </component>
   <component name="ProjectId" id="1meDtE7d2CfLKbK2tURyaQYjvIi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -54,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.day4">
+  <component name="RunManager" selected="Python.day6">
     <configuration name="day1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="feriechallenge2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,7 +112,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="day_5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="day6" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="feriechallenge2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,11 +120,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day_5_movie_finder" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day_6_image_resizer" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day_5_movie_finder/day_5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day_6_image_resizer/day6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.day6" />
         <item itemvalue="Python.day4" />
         <item itemvalue="Python.day2" />
         <item itemvalue="Python.day1" />
         <item itemvalue="Python tests.Unittests in test_day1.py" />
-        <item itemvalue="Python.day_5" />
       </list>
     </recent_temporary>
   </component>

@@ -1,0 +1,6 @@
+#IMAGE #RESIZER
+Napisz program, który w wybranej lokalizacji odczyta wszystkie pliki graficzne (w określonych formatach, np. jpg, png, bmp itp.),
+następnie zmniejszy ich rozdzielczość o 50% i zapisze je w podkatalogu “smaller” z odpowiednimi nazwami.
+ Wykorzystaj pillow lub inną bibliotekę do pracy z obrazami.
+Propozycja rozszerzenia: Oblicz ile miejsca na dysku można oszczędzić po kompresji
+(odczytaj rozmiar plików w pierwotnym folderze oraz "smaller" i porównaj obie wartości - bezwzględnie i w %)
