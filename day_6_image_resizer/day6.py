@@ -1,12 +1,3 @@
-"""
-#IMAGE #RESIZER
-Napisz program, który w wybranej lokalizacji odczyta wszystkie pliki graficzne (w określonych formatach,
- np. jpg, png, bmp itp.), następnie zmniejszy ich rozdzielczość o 50% i zapisze je w podkatalogu “smaller”
-  z odpowiednimi nazwami. Wykorzystaj pillow lub inną bibliotekę do pracy z obrazami.
-Propozycja rozszerzenia: Oblicz ile miejsca na dysku można oszczędzić po kompresji
-(odczytaj rozmiar plików w pierwotnym folderze oraz "smaller" i porównaj obie wartości - bezwzględnie i w %)
-"""
-
 import os
 from PIL import Image
 from typing import Dict
@@ -30,8 +21,9 @@ class ImageResizer:
         paths = self.read_all_in()
         for file, filepath in paths.items():
             image = Image.open(filepath)
+            image.copy()
             height, width = self.get_pixels_size_of(image)
-            new_image = image.resize((height/2, width/2))
+            new_image = image.resize((height / 2, width / 2))
             base_dir = os.path.join(self.destination_path, file)
             with open(base_dir, 'w') as f:
                 pass
@@ -57,9 +49,13 @@ class ImageResizer:
 
 def main():
     base_dir = os.getcwd()
+    #folder with photos to process
     photo_path = os.path.join(base_dir, 'photo')
+    #folder for pocessed photos
     destination_path = os.path.join(base_dir, 'smaller')
+    #init program
     conversion = ImageResizer(photo_path, destination_path)
+    #print result and savings in mb
     print(conversion.savings)
 
 
