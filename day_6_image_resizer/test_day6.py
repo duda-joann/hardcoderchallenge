@@ -22,10 +22,14 @@ class TestImageResizer(unittest.TestCase):
                               )
 
     def test_get_pixels_size_of(self):
-        pass
+        self.assertEqual(self.test.get_pixels_size_of(os.path.join(base_dir, 'photo', 'cat.jpg')), (512, 384))
+        self.assertEqual(self.test.get_pixels_size_of(os.path.join(base_dir, 'photo', 'cat.jpg')), (607, 1024))
 
     def test_resize_all_images_in_and_save_to(self):
-        pass
+        self.assertTrue(os.path.isdir(destination_path))
+        self.assertTrue(os.path.isdir(os.path.join(destination_path,'smaller', 'cat.jpg')))
+        self.assertTrue(os.path.isdir(os.path.join(destination_path, 'smaller', 'cat1.jpg')))
+
 
     def test_get_image_folder_size(self):
         pass

@@ -28,8 +28,8 @@ class ImageResizer:
         :param image: image for which should be return size
         :return: height and width for image
         """
-        height, width = image.size
-        return height, width
+        width, height = image.size
+        return width, height
 
     def resize_all_images_in_and_save_to(self) -> None:
         """
@@ -39,13 +39,14 @@ class ImageResizer:
         paths = self.read_all_in()
         for file, filepath in paths.items():
             image = Image.open(filepath)
-            image.copy()
-            height, width = self.get_pixels_size_of(image)
-            new_image = image.resize((height / 2, width / 2))
+            new_image = image.copy()
+            width, height = self.get_pixels_size_of(image)
             base_dir = os.path.join(self.destination_path, file)
             with open(base_dir, 'w') as f:
                 pass
             new_image.save(base_dir)
+            new_image.resize((int(width/2), int(width/2)))
+
 
     @staticmethod
     def get_image_folder_size(file_path: str) -> int:
@@ -65,9 +66,9 @@ class ImageResizer:
         size_of_processed_path = self.get_image_folder_size(self.destination_path)
         return size_of_original_path-size_of_processed_path
 
-    def recalculate_from_bytes_to_mg(self) -> float:
+    def recalculate_from_bytes_to_kilo(self) -> float:
         """
-        recalculation size from bytes to megabytes
+        recalculation size from bytes to kilobytes
         :return: size in megabytes
         """
         size = self.calculate_saved_space_between()
@@ -75,7 +76,7 @@ class ImageResizer:
 
     @property
     def savings(self):
-        return self.recalculate_from_bytes_to_mg()
+        return self.recalculate_from_bytes_to_kilo()
 
 
 def main():
