@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="29ea546c-f360-4d12-bdb4-d6f93f108988" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/day_6_image_resizer/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day_7_password_generator/day7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day_7_password_generator/day7.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_1_palindroms&amp;anagrams/test_day1.py" beforeDir="false" afterPath="$PROJECT_DIR$/day_1_palindroms&amp;anagrams/test_day1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_2_day_from_calendar/day2.py" beforeDir="false" afterPath="$PROJECT_DIR$/day_2_day_from_calendar/day2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day_6_image_resizer/day6.py" beforeDir="false" afterPath="$PROJECT_DIR$/day_6_image_resizer/day6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day_6_image_resizer/photo/cat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/day_6_image_resizer/photo/cat.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day_6_image_resizer/photo/cat1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/day_6_image_resizer/photo/cat1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_6_image_resizer/smaller/cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_6_image_resizer/smaller/cat1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/day_6_image_resizer/test_day6.py" beforeDir="false" afterPath="$PROJECT_DIR$/day_6_image_resizer/test_day6.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,8 +55,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.day7">
-    <configuration name="day2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.Unittests in test_day1.py">
+    <configuration name="day1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="feriechallenge2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -62,32 +64,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day_2_day_from_calendar" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day_1_palindroms&amp;anagrams" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day_2_day_from_calendar/day2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="day4" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="feriechallenge2020" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day_4_fat_burner" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day_4_fat_burner/day4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day_1_palindroms&amp;anagrams/day1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,6 +119,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_day1.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="feriechallenge2020" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/day_1_palindroms\u0026anagrams/test_day1.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in test_day6.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="feriechallenge2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.day7" />
+        <item itemvalue="Python tests.Unittests in test_day1.py" />
+        <item itemvalue="Python.day1" />
         <item itemvalue="Python.day6" />
+        <item itemvalue="Python.day7" />
         <item itemvalue="Python tests.Unittests in test_day6.py" />
-        <item itemvalue="Python.day4" />
-        <item itemvalue="Python.day2" />
       </list>
     </recent_temporary>
   </component>

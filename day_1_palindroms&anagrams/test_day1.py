@@ -13,16 +13,26 @@ class TestPalindromsMethods(unittest.TestCase):
         print('Start')
 
     def test_format_word(self) -> None:
-        self.assertEqual(self.value1.format_word(), 'alamakota')
-        self.assertEqual(self.value2.format_word(), 'kalak')
-        self.assertEqual(self.value3.format_word(), "tasak")
-        self.assertEqual(self.value4.format_word(), "cosconiedziałaalemogłobybyc")
+        cases = [
+            (self.value1, 'alamakota'),
+            (self.value2, 'kalak'),
+            (self.value3, 'tasak'),
+            (self.value4, 'cosconiedziałaalemogłobybyc')
+        ]
+        for value, result in cases:
+            with self.subTest(cases=cases):
+                self.assertEqual(value.format_word(), result)
 
     def test_reverse_word(self) -> None:
-        self.assertEqual(self.value1.reverse_word(), 'atokamala')
-        self.assertEqual(self.value2.reverse_word(), 'kalak')
-        self.assertEqual(self.value3.reverse_word(), 'kasat')
-        self.assertEqual(self.value4.reverse_word(), 'cybybołgomelaałaizdeinocsoc')
+        cases = [
+            (self.value1, 'atokamala'),
+            (self.value2, 'kalak'),
+            (self.value3, 'kasat'),
+            (self.value4, 'cybybołgomelaałaizdeinocsoc')
+        ]
+        for value, result in cases:
+            with self.subTest(cases=cases):
+                self.assertEqual(value.reverse_word(), result)
 
     def test_is_palindrom(self) ->None:
         self.assertFalse(self.value1.is_palindrom())

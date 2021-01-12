@@ -38,15 +38,14 @@ class ImageResizer:
         """
         paths = self.read_all_in()
         for file, filepath in paths.items():
-            image = Image.open(filepath)
-            new_image = image.copy()
-            width, height = self.get_pixels_size_of(image)
             base_dir = os.path.join(self.destination_path, file)
+            image = Image.open(filepath)
+            width, height = self.get_pixels_size_of(image)
+            small_image = image.resize((int(width/2), int(width/2)))
+            os.path.join(self.destination_path, file)
             with open(base_dir, 'w') as f:
                 pass
-            new_image.save(base_dir)
-            new_image.resize((int(width/2), int(width/2)))
-
+            small_image.save(base_dir)
 
     @staticmethod
     def get_image_folder_size(file_path: str) -> int:
@@ -64,7 +63,7 @@ class ImageResizer:
         """
         size_of_original_path = self.get_image_folder_size(self.file_path)
         size_of_processed_path = self.get_image_folder_size(self.destination_path)
-        return size_of_original_path-size_of_processed_path
+        return size_of_original_path - size_of_processed_path
 
     def recalculate_from_bytes_to_kilo(self) -> float:
         """

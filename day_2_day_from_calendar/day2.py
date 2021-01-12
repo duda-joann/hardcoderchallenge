@@ -9,7 +9,8 @@ def get_single_quote() -> Dict:
     get a single  quote from api
     :return: dictinary with text and and author
     """
-    request = requests.get("https://type.fit/api/quotes?fbclid=IwAR1hYMVMle01uUHjjHrkXxG5qnp7iRVsLAMuX9gWXgUxwKTQszM98owxooA")
+    request = requests.get("https://type.fit/api/quotes?fbclid=IwAR1hYMVMle01uUHjjHr"
+                           "kXxG5qnp7iRVsLAMuX9gWXgUxwKTQszM98owxooA")
     if request.status_code != 200:
         return {'message': "API not available"}
 
