@@ -5,6 +5,7 @@ Tasks made during Hard Coder's challenge #feriechallenge2020 1 day, 1 program. I
 #TODO needs to write tests for all tasks realized during challenge. 
 
 Contents 
+
 📖 Table of contents:
 • Day 1: Palindromes, web scraping
 • Day 2: Day from the calendar 
