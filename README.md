@@ -18,10 +18,12 @@ Contents
 • Day 10: Challenge summary 
 
 Day1 
+
 Palindroms&Anagrams 
 Write a program that takes a word from user, reverse the word ( from the right to the left)  and return info if word is a palindrom.  Please ignore ( capitalize letter, uppercase and signs which are not  the letters.  The next step is opening a random webside that shows anagrams and created words after removing some letters, for example: https://poocoo.pl/scrabble-slowa-z-liter/hardcoder 
 
 Day2 
+
 Day from the calendar 
 Write a program,  that after start running will show a current: weather, hour, day of the week in the choosen city. Please remember about recalculation of  temperature and  pressure. Also, please choose a random quotes from page:  https://type.fit/api/quotes. 
 Please use requests and datetime module. 
