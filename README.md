@@ -1,5 +1,8 @@
 Link to challenge: 
+https://www.facebook.com/events/843253696243420
+
 #feriechallenge2020, 10 days 10 programs in Python 
+
 Tasks made during Hard Coder's challenge #feriechallenge2020 1 day, 1 program. In summary 10 days and ten programs. Lasts 4.01.2020 til 17.01.2020 during polish winter holidays. In *.txt description for task.
 
 #TODO needs to write tests for all tasks realized during challenge. 
@@ -7,16 +10,16 @@ Tasks made during Hard Coder's challenge #feriechallenge2020 1 day, 1 program. I
 Contents 
 
 📖 Table of contents:
-• Day 1: Palindromes, web scraping
-• Day 2: Day from the calendar 
-• Day 3: Automatic email sen
-• Day 4: Fat Burner
-• Day 5: Movie Finder
-• Day 6: Image resizer
-• Day 7: Password_generator
-• Day 8: Distance Calculator
-• Day 9:  House library
-• Day 10: Challenge summary 
+Day 1: Palindromes, web scraping
+Day 2: Day from the calendar 
+Day 3: Automatic email sen
+Day 4: Fat Burner
+Day 5: Movie Finder
+Day 6: Image resizer
+Day 7: Password_generator
+Day 8: Distance Calculator
+Day 9:  House library
+Day 10: Challenge summary 
 
 Day1 
 
